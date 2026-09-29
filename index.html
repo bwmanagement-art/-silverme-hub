@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>silver me · silver 쌤</title>
+<meta name="description" content="배화여자대학교 스마트경영과 silver 쌤의 브랜드 허브">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #132B4A;
+    --navy-2: #24406B;
+    --teal: #0E7C86;
+    --coral: #FF6B5B;
+    --bg: #F4F7F9;
+    --card: #FFFFFF;
+    --radius: 20px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--navy-2);
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px 48px; }
+  h1, h2, h3 { color: var(--navy); line-height: 1.35; }
+
+  header.hero { background: var(--navy); color: #fff; padding: 72px 20px 88px; }
+  .hero .inner { max-width: 880px; margin: 0 auto; }
+  .hero .badge {
+    display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .04em;
+    color: #fff; background: var(--teal); padding: 4px 14px; border-radius: 999px; margin-bottom: 20px;
+  }
+  .hero h1 { color: #fff; font-size: clamp(34px, 7vw, 52px); font-weight: 900; }
+  .hero h1 span { color: var(--coral); }
+  .hero .affil { margin-top: 10px; font-size: 17px; font-weight: 500; opacity: .9; }
+  .hero .tagline { margin-top: 24px; font-size: 18px; max-width: 560px; }
+
+  main { margin-top: -40px; display: grid; gap: 28px; }
+  .card {
+    background: var(--card); border-radius: var(--radius); padding: 32px;
+    box-shadow: 0 6px 24px rgba(19, 43, 74, .07);
+  }
+  .card h2 { font-size: 22px; font-weight: 700; margin-bottom: 18px; }
+  .card h2::before {
+    content: ""; display: inline-block; width: 6px; height: 1em; background: var(--coral);
+    border-radius: 3px; margin-right: 10px; vertical-align: -0.12em;
+  }
+  h3.sub { font-size: 15px; font-weight: 700; color: var(--teal); margin: 22px 0 10px; }
+  h3.sub:first-of-type { margin-top: 0; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+  .tags li {
+    padding: 6px 16px; border-radius: 999px; font-size: 15px; font-weight: 500;
+    border: 1.5px solid var(--teal); color: var(--teal);
+  }
+  .tags.courses li { border-color: var(--navy-2); color: var(--navy-2); }
+
+  .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .channel {
+    display: flex; flex-direction: column; gap: 8px;
+    border: 1.5px solid #E3E9EF; border-radius: var(--radius); padding: 24px;
+  }
+  .channel h3 { font-size: 18px; font-weight: 700; }
+  .channel p { flex: 1; font-size: 15px; }
+  .btn {
+    align-self: flex-start; margin-top: 8px; text-decoration: none;
+    background: var(--teal); color: #fff; font-weight: 700; font-size: 15px;
+    padding: 10px 20px; border-radius: 999px; transition: background .15s;
+  }
+  .btn:hover, .btn:focus-visible { background: var(--navy); }
+  .btn.coral { background: var(--coral); }
+  .btn.coral:hover, .btn.coral:focus-visible { background: var(--navy); }
+  .channel.todo { border-style: dashed; }
+
+  .todo-text { color: var(--coral); font-weight: 500; }
+  .contact a { color: var(--teal); font-weight: 700; }
+
+  footer { max-width: 880px; margin: 0 auto; padding: 8px 20px 40px; text-align: right; }
+  footer .sig { font-size: 13px; font-weight: 700; color: var(--navy-2); text-transform: lowercase; }
+
+  @media (max-width: 600px) {
+    header.hero { padding: 56px 20px 72px; }
+    .card { padding: 24px 20px; }
+    .hero .tagline { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <span class="badge">PROFESSOR</span>
+    <h1>silver <span>쌤</span></h1>
+    <p class="affil">배화여자대학교 스마트경영과</p>
+    <p class="tagline"><span class="todo-text" style="color:#fff;opacity:.85">[한 줄 소개 문구 입력]</span></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <main>
+    <section class="card" aria-labelledby="fields">
+      <h2 id="fields">연구·강의 분야</h2>
+      <h3 class="sub">분야</h3>
+      <ul class="tags">
+        <li>소비자 행동</li>
+        <li>SNS 마케팅</li>
+        <li>가족자원경영</li>
+      </ul>
+      <h3 class="sub">담당 과목</h3>
+      <ul class="tags courses">
+        <li>마케팅커뮤니케이션</li>
+        <li>SNS마케팅</li>
+        <li>소비자행동</li>
+        <li>마케팅</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="channels">
+      <h2 id="channels">채널</h2>
+      <div class="channels">
+        <article class="channel">
+          <h3>네이버 블로그 silver me</h3>
+          <p>silver me 블로그로 이동합니다. <span class="todo-text">[한 줄 설명 입력]</span></p>
+          <!-- TODO: href를 블로그 주소로 교체 -->
+          <a class="btn" href="#" aria-label="네이버 블로그 silver me 바로가기">블로그 가기</a>
+        </article>
+        <article class="channel">
+          <h3>SNS 마케팅 위클리</h3>
+          <p>학생용 뉴스레터입니다. <span class="todo-text">[한 줄 설명 입력]</span></p>
+          <!-- TODO: href를 아카이브 또는 안내 주소로 교체 -->
+          <a class="btn coral" href="#" aria-label="SNS 마케팅 위클리 바로가기">위클리 보기</a>
+        </article>
+        <article class="channel todo">
+          <h3><span class="todo-text">[추가 채널 이름 입력]</span></h3>
+          <p><span class="todo-text">[한 줄 설명 입력]</span></p>
+          <!-- TODO: 채널이 없으면 이 카드를 삭제 -->
+          <a class="btn" href="#">바로가기</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card contact" aria-labelledby="contact">
+      <h2 id="contact">연락처</h2>
+      <p>이메일: <span class="todo-text">[공개할 이메일 입력]</span></p>
+      <p>기타: <span class="todo-text">[내용 입력]</span></p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <span class="sig">silver me</span>
+</footer>
+
+</body>
+</html>
